@@ -24,13 +24,3 @@
 		<?php include 'include/footer.inc.php'; ?>
 	</body>
 </html>
-
-<!-- Test Vilster -->
-<!-- Test Vilster 1 -->
-<!-- Test Vilster 2 -->
-
-
-<!-- Test Patrick -->
-<!-- Test Vilster 4 -->
-
-<!-- Test Hello World -->
