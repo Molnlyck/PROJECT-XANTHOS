@@ -24,3 +24,5 @@
 		<?php include 'include/footer.inc.php'; ?>
 	</body>
 </html>
+
+<!-- Test -->
