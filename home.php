@@ -20,6 +20,8 @@
 		
 		<div class="bgimg"></div>
 		<div class="overlaybg"></div>
+
+        <h1>Hello world</h1>
 		
 		<?php include 'include/footer.inc.php'; ?>
 	</body>
