@@ -92,6 +92,7 @@
 		            			<li><a href="http://datamatiker.vibedrive.dk/semester/5/" class="not-active">5. Semester</a></li>
 		            			<li><a href="https://skole.vibedrive.dk/dokumentation.php" class="not-active">Dokumentation</a></li>
 		            			<li><a href="https://skole.vibedrive.dk/upload.php" class="not-active">Upload</a></li>
+                                <li><a href="#">Test</a></li>
 		            			<li><a href="http://skole.vibedrive.dk/logout.php?logout">Log ud</a></li>
 		          			</ul>
 		        		</nav>
