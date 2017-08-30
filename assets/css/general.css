@@ -1,3 +1,4 @@
+/*  DROPDOWN NAVIGATION   */
 .dropdown-menu {
   width:200px;
   
@@ -106,4 +107,24 @@
 }
 hr {
   margin-top:-5px !important;
+}
+
+/* PRE */
+.code-section {
+    display: block !important;
+}
+
+/* UPLOAD */
+.awesome-bg {
+    width:100%;
+    height:100%;
+
+    padding:10px;
+    border-radius:5px;
+}
+.form-group label {
+    color:#FFF !important;
+}
+.form-group .form-text {
+    color:#eeeeee !important;
 }

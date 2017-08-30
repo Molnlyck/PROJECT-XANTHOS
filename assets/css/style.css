@@ -35,6 +35,14 @@
  				         0.0 RESET
  
 ============================================================== */
+body { padding-top: 70px; }
+::-webkit-scrollbar {
+    width: 4px;  /* remove scrollbar space */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #00B285;
+}
 .btn {
   color: #292929;
   font-size: 14px;
@@ -520,7 +528,7 @@ h5 {
 footer {
 	bottom:0;
 	left:0;
-	position:fixed;
+	position:relative;
 	width:100%;
 	margin-bottom:5px;
 }
