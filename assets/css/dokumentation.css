@@ -1,12 +1,41 @@
 
 
-
-
-
-body {
-
+#picture1 {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
 }
 
-h2 {
+#picture2 {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+p {
     color: white;
+}
+
+h3 {
+    color: white !important;
+}
+
+#introContainer {
+    margin: 20px 20px;
+}
+
+#task {
+    color: #ACB7B7 !important;
+}
+
+#introText {
+    margin: 10px;
+}
+
+#introTextparagraph {
+    margin: 10px;
+}
+
+#teamText {
+    margin: 20px;
 }
