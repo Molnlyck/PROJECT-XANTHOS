@@ -15,12 +15,12 @@
 		$uname = trim($_POST['uname']);
 		$uname = strip_tags($email);
 		$uname = htmlspecialchars($email);
-		$uname = mysqli_real_escape_string($conn1, $_POST['uname']);
+		$uname = mysqli_real_escape_string($temp_conn, $_POST['uname']);
 			
 		$pass = trim($_POST['pass']);
 		$pass = strip_tags($pass);
 		$pass = htmlspecialchars($pass);
-		$pass = mysqli_real_escape_string($conn1, $_POST['pass']);
+		$pass = mysqli_real_escape_string($temp_conn, $_POST['pass']);
 		
 		if(empty($uname)) {
 			$error = true;
@@ -36,7 +36,7 @@
 			$password = md5($pass);
 			
 			$sql = "SELECT * FROM datamatiker_user WHERE username = '$uname'";
-			$res = mysqli_query($conn1, $sql);
+			$res = mysqli_query($temp_conn, $sql);
 			$row = mysqli_fetch_array($res,MYSQLI_ASSOC);
 			$count = mysqli_num_rows($res);
 			

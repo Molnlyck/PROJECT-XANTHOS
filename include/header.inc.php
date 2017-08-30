@@ -48,7 +48,7 @@
       		        </li>
       	        </ul>
             </li>
-            <li><a href="https://skole.vibedrive.dk/dokumentation">Dokumentation</a></li>
+            <li><a href="https://skole.vibedrive.dk/dokumentation">Om udviklerne</a></li>
             <li><a href="https://skole.vibedrive.dk/logout?logout">Log ud</a></li>
         </ul>
     </div>
