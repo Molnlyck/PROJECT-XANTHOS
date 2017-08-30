@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f3e6bd18-af5b-4248-9600-f5f719683a6a" name="vibedrive.dk" url="http://vibedrive.dk">
+        <fileTransfer host="vibedrive.dk" port="21" rootFolder="/skole">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
