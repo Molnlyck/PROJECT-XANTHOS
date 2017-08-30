@@ -10,7 +10,7 @@
 	        </div>
 	    </form>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://skole.vibedrive.dk/home.php" >Hjem</a></li>
+            <li><a href="https://skole.vibedrive.dk/home" >Hjem</a></li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">1. Semester <span class="caret"></span></a>
                 <ul class="dropdown-menu multi-level">
                     <li class="dropdown-submenu"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-code"></i> Programmering</a>
@@ -48,7 +48,8 @@
       		        </li>
       	        </ul>
             </li>
-            <li><a href="https://skole.vibedrive.dk/dokumentation.php">Dokumentation</a></li>
+            <li><a href="https://skole.vibedrive.dk/dokumentation">Dokumentation</a></li>
+            <li><a href="https://skole.vibedrive.dk/logout?logout">Log ud</a></li>
         </ul>
     </div>
 </nav>

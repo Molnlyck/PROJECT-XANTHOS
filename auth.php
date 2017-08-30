@@ -5,7 +5,7 @@
 	require_once 'include/temp_config.php';
 	if (isset($_SESSION['user'])!="") 
 	{
-		header("Location: home.php");
+		header("Location: home");
 		exit();
 	}
 	
@@ -43,7 +43,7 @@
 			if($count == 1 && $row['pword'] == $password) {
 				$_SESSION['user'] = $row['id'];
 				$_SESSION['name'] = $row['first_name'];
-				header("Location: home.php");
+				header("Location: home");
 				
 			} else {
 				$errMSG = 
@@ -81,7 +81,7 @@
 			<p>Af: Patrick Bergmann</p>
 		</div>
 		<div class="login">
-			<form action="https://skole.vibedrive.dk/auth.php" method="POST">
+			<form action="https://skole.vibedrive.dk/auth" method="POST">
 				<input type="text" name="uname" id="uname" placeholder="Brugernavn"><br />
 				<input type="password" name="pass" id="pass" placeholder="Password"><br />
 				<input type="submit" name="btn-signin" value="Log ind">
