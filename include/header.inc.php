@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">Datamatiker Vejle <small style="font-size:10px; margin-left:10px;">Project by: Nicklas Vilster & Patrick Bergmann</small></a>
