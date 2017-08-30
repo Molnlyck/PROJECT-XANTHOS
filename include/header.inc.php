@@ -48,7 +48,7 @@
       		        </li>
       	        </ul>
             </li>
-            <li><a href="#">Dokumentation</a></li>
+            <li><a href="https://skole.vibedrive.dk/dokumentation.php">Dokumentation</a></li>
         </ul>
     </div>
 </nav>
