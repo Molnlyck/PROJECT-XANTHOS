@@ -46,15 +46,7 @@
 				header("Location: home");
 				
 			} else {
-				$errMSG = 
-				"
-				<li class='alert alert-error'>
-					<i class='icon'></i>
-					<div class='alert-title'>FEJL</div>
-					<div class='alert-message'>Du har indtastet brugernavn eller password forkert, prøv venligst igen!</div>
-					<em>Klik for at lukke</em>
-				</li>
-				";
+
 			}
 		}	
 	}
@@ -72,22 +64,24 @@
 		
 		<!-- CSS -->
 		<link rel="stylesheet" href="https://skole.vibedrive.dk/assets/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body>
 		<div class="bgimg"></div>
 		<div class="overlaybg"></div>
-		<div class="header_login_title">
-			<div>Data<span>matiker</span></div>
-			<p>Af: Patrick Bergmann</p>
-		</div>
-		<div class="login">
-			<form action="https://skole.vibedrive.dk/auth" method="POST">
-				<input type="text" name="uname" id="uname" placeholder="Brugernavn"><br />
-				<input type="password" name="pass" id="pass" placeholder="Password"><br />
-				<input type="submit" name="btn-signin" value="Log ind">
-				<p style="color:white; font-size:20px;">Endnu ikke bruger? Opret dig <a style="color: blue; text-decoration:none; font-size:20px;" href="https://datamatiker.vibedrive.dk/register.php">her</a></p>
-			</form>
-		</div>
+        <div class="container">
+            <div class="header_login_title">
+                <div>Data<span>matiker</span></div>
+                <p>Af: Patrick Bergmann & Nicklas Vilster</p>
+            </div>
+            <div class="login">
+                <form action="https://skole.vibedrive.dk/auth" method="POST">
+                    <input type="text" name="uname" id="uname" placeholder="Brugernavn"><br />
+                    <input type="password" name="pass" id="pass" placeholder="Password"><br />
+                    <input type="submit" name="btn-signin" class="btn btn-green" value="Log ind">
+                </form>
+            </div>
+        </div>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	</body>
 </html>

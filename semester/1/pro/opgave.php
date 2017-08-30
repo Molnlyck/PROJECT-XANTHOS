@@ -15,6 +15,7 @@
 				$description = $get['description'];
 				$code = $get['code'];
 				$upload = $get['upload'];
+				$uploaddate = $get['uploaddate'];
 			}
 			
 			
@@ -108,46 +109,36 @@
 		
 	</head>
 	<body>
-		<? include '../../../include/header.inc.php'; ?>
-		
+        <? include '../../../include/header.inc.php'; ?>
+
 		<div class="bgimg"></div>
 		<div class="overlaybg"></div>
 		
 		<div class="container">
-
-	      <!-- Portfolio Item Heading -->
-	      <h1 class="my-4">Opgavesæt 1
-	        <small><? echo $title;  ?></small>
-	      </h1>
-	
-	      <!-- Portfolio Item Row -->
-	      <div class="row">
-	
-	        <div class="col-md-8">
-	          <pre>
+            <h1 class="my-4">Opgavesæt 1
+	            <small><? echo $title;  ?></small>
+            </h1>
+	        <div class="row">
+	            <div class="col-md-8">
+	                <pre class="code-section">
 <? echo $code;  ?>
-	
-	          </pre>
+	                </pre>
+	            </div>
+	            <div class="col-md-4">
+	                <h3 class="my-3">Projekt Beskrivelse</h3>
+	                <p><? echo $description; ?></p>
+	                <h3 class="my-3">Projekt Detajler</h3>
+                    <ul>
+                        <li><p>Uploaded af: <? echo $upload; ?></p></li>
+                        <li><p>Uploadet den: <? echo $uploaddate; ?></p></li>
+                    </ul>
+	            </div>
 	        </div>
-	
-	        <div class="col-md-4">
-	          <h3 class="my-3">Projekt Beskrivelse</h3>
-	          <p><? echo $description; ?></p>
-	          <h3 class="my-3">Projekt Detajler</h3>
-	          
-	        </div>
-	
-	      </div>
-		</div>
-		
+        </div>
     	<div class="container ">
-
 		    <h3 class="my-4">Relateret projekter</h3>
-		    
 		    <div class="tz-gallery">
-		
 		        <div class="row">
-		
 		            <div class="col-sm-6 col-md-4">
 		                <div class="thumbnail">
 		                    <a class="lightbox" href="../images/park.jpg">
@@ -155,7 +146,6 @@
 		                    </a>
 		                    <div class="caption">
 		                        <h3 class="my-4">Opgave 2</h3>
-		                        
 		                    </div>
 		                </div>
 		            </div>
@@ -166,7 +156,6 @@
 		                    </a>
 		                    <div class="caption">
 		                        <h3 class="my-4">Opgave 3</h3>
-		                       
 		                    </div>
 		                </div>
 		            </div>
@@ -177,17 +166,12 @@
 		                    </a>
 		                    <div class="caption">
 		                        <h3 class="my-4">Opgavesæt 2 | Opgave 1</h3>
-		                        
 		                    </div>
 		                </div>
 		            </div>
 		        </div>
-		
 		    </div>
-		
-		</div> 
-
-
+		</div>
 		<? include '../../../include/footer.inc.php'; ?>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
