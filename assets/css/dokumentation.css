@@ -23,8 +23,11 @@ body {
     margin-bottom: 0;
 }
 .text-center {
-     text-align: center !important;
- }
+    text-align: center !important;
+}
+
+
+
 .social .list-inline {
     margin:0;
     margin-top:-35px;
@@ -34,22 +37,26 @@ body {
 .list-inline-item {
     display: inline-block;
 }
+
+
 .social .list-inline .social-facebook a {
     background-color: #3b5998;
-    transition: all 0.2s ease-in-out
+    transition: all 0.5s ease-in-out;
 }
 .social .list-inline .social-github a {
     background-color: #999;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .social .list-inline .social-twitter a{
     background-color: #1da1f2;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .social .list-inline .social-linkedin a{
     background-color:#0077b5;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
+
+
 .social .list-inline li a {
     display: block;
     width: 35px;
@@ -58,4 +65,41 @@ body {
     border-radius: 100%;
     font-size: 16px;
     line-height: 35px;
+    margin: 10px;
+}
+
+.social .list-inline .social-facebook a:hover {
+    background-color: #00B285;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    padding-top: 2px;
+}
+
+.social .list-inline .social-github a:hover {
+    background-color: #00B285;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    padding-top: 2px;
+}
+
+.social .list-inline .social-twitter a:hover {
+    background-color: #00B285;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    padding-top: 2px;
+}
+
+.social .list-inline .social-linkedin a:hover {
+    background-color: #00B285;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    padding-top: 2px;
 }

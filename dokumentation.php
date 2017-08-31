@@ -53,6 +53,9 @@ include_once 'include/config.php';
         <div class="col-lg-12">
             <h2 class="page-header my-4">Vores udviklere</h2>
         </div>
+
+
+        <!-- Patrick -->
         <div class="col-lg-6 col-sm-3 text-center">
             <img class="img-circle img-responsive img-center" src="https://cdn.discordapp.com/attachments/350686737007116299/352526002255298570/migpaamc.jpg" alt="">
             <h3 class="my-5">Patrick Bergmann
@@ -69,6 +72,8 @@ include_once 'include/config.php';
             </div>
             <p class="my-p">Patrick er en kendt Destiny noob, du kan jævligt finde ham foran sin PS4, savlende over de nyeste raids. <br> Møder du ham en dag på serverne, så er du garanteret en nem sejr.</p>
         </div>
+
+        <!-- Vilster -->
         <div class="col-lg-6 col-sm-3 text-center">
             <img class="img-circle img-responsive img-center" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/12278730_10153247624051381_4583848965544923573_n.jpg?oh=6a2487f5c1e6fc97f4e67323eb0a102d&oe=5A1BC914" alt="">
             <h3 class="my-5">Nicklas Vilster
@@ -86,7 +91,7 @@ include_once 'include/config.php';
             <p class="my-p">Nicklas er awesome!</p>
         </div>
     </div>
-    <!-- END ROW -->
+    <!-- END TEAM ROW -->
 
 </div>
 
