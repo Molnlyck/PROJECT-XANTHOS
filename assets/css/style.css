@@ -528,17 +528,19 @@ h5 {
 footer {
 	bottom:0;
 	left:0;
-	position:relative;
+	position:fixed !important;
 	width:100%;
-	margin-bottom:5px;
+    height:30px;
+    background-color: #00B285 !important;
 }
 
 .footer .credits {
+    margin-top:7px;
   text-align: center;
   color: #fff !important;
 }
 .footer .credits .link {
-  color: #00B285 !important;
+  color: #444 !important;
   text-decoration: none;
 }
 

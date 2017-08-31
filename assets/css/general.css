@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Cinzel|Jura|Monda|Open+Sans+Condensed:300');
+
+body {
+    /*font-family: 'Abel', sans-serif !important; */
+    font-family: 'Monda', sans-serif !important;
+    /*font-family: 'Cinzel', serif !important; */
+
+}
+pre {
+    font-family: 'Jura', sans-serif !important;
+}
+
 /*  DROPDOWN NAVIGATION   */
 .dropdown-menu {
   width:200px;

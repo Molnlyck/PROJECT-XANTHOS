@@ -5,7 +5,7 @@
         </div>
         <form class="navbar-form navbar-right">
 	        <div class="input-group">
-	            <input type="text" class="form-control" placeholder="Søg efter opgave...">
+	            <input type="text" class="form-control input" placeholder="Søg efter opgave...">
 	            <div class="input-group-btn"><button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button></div>
 	        </div>
 	    </form>
