@@ -1,41 +1,61 @@
-
-
-#picture1 {
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+.my-5 {
+    color:#FFF;
+}
+.my-small {
+    font-size:12px;
+}
+.my-p {
+    color:#999;
+    font-size:12px;
+}
+.img-center {
+    margin: 0 auto;
+}
+.img-circle {
+    width:300px !important;
+    height:300px !important;
+}
+.social {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.text-center {
+     text-align: center !important;
+ }
+.social .list-inline {
+    margin:0;
+    margin-top:-35px;
+    margin-bottom:25px;
 }
 
-#picture2 {
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
+.list-inline-item {
+    display: inline-block;
 }
-
-p {
+.social .list-inline .social-facebook a {
+    background-color: #3b5998;
+    transition: all 0.2s ease-in-out
+}
+.social .list-inline .social-github a {
+    background-color: #999;
+    transition: all 0.2s ease-in-out;
+}
+.social .list-inline .social-twitter a{
+    background-color: #1da1f2;
+    transition: all 0.2s ease-in-out;
+}
+.social .list-inline .social-linkedin a{
+    background-color:#0077b5;
+    transition: all 0.2s ease-in-out;
+}
+.social .list-inline li a {
+    display: block;
+    width: 35px;
+    height: 35px;
     color: white;
-}
-
-h3 {
-    color: white !important;
-}
-
-#introContainer {
-    margin: 20px 20px;
-}
-
-#task {
-    color: #ACB7B7 !important;
-}
-
-#introText {
-    margin: 10px;
-}
-
-#introTextparagraph {
-    margin: 10px;
-}
-
-#teamText {
-    margin: 20px;
+    border-radius: 100%;
+    font-size: 16px;
+    line-height: 35px;
 }

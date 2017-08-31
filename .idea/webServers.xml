@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="e980440e-edef-45cb-8520-bf7b2f9c301f" name="Egen hosting" url="http://ftp.vilster.net">
-        <fileTransfer host="ftp.vilster.net" port="21" rootFolder="/Project-XANTHOS">
+      <webServer id="e980440e-edef-45cb-8520-bf7b2f9c301f" name="Egen hosting" url="http://vibedrive.dk">
+        <fileTransfer host="vibedrive.dk" port="21" rootFolder="/skole">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
