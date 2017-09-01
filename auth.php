@@ -35,7 +35,7 @@
 		if(!$error) {
 			$password = md5($pass);
 			
-			$sql = "SELECT * FROM user WHERE username = '$uname'";
+			$sql = "SELECT * FROM user WHERE uname = '$uname'";
 			$res = mysqli_query($conn, $sql);
 			$row = mysqli_fetch_array($res,MYSQLI_ASSOC);
 			$count = mysqli_num_rows($res);

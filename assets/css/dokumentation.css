@@ -103,3 +103,40 @@ body {
     display: block;
     padding-top: 2px;
 }
+/* COUNTER */
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.text-center {
+    text-align:center !important;
+}
+.g-brb-gray-light-v3 {
+    border-color:#ddd !important;
+}
+.g-brd-2 {
+    border-width:2px !important;
+}
+.g-rounded-4 {
+    border-radius: 4px !important;
+}
+.g-brd-bottom {
+    border-bottom: solid 1px transparent !important;
+}
+.g-bg-white {
+    background-color:#fff !important;
+}
+.g-font-weight-300 {
+    font-weight: 300;
+}
+.g-font-size-35 {
+    font-size:2.5rem !important;
+    color: #fff !important;
+}
+.g-font-size-11 {
+    font-size: 1.13249rem !important;
+    color:#fff !important;
+}
+.g-mb-30 {
+    color:#fff !important;
+}

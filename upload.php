@@ -118,12 +118,6 @@ $options = "";
 
         <!-- FAVICON -->
         <link rel="shortcut icon" href="http://datamatiker.vibedrive.dk/assets/img/favicon.ico">
-
-        <script type="text/javascript">
-            function getEmner() {
-                <?php require("functions.php"); ?>
-            }
-        </script>
     </head>
     <body>
         <?php include 'include/header.inc.php'; ?>
@@ -151,7 +145,7 @@ $options = "";
                     </div>
                     <div class="form-group">
                         <label for="fag">Vælg fag</label>
-                        <select class="form-control" name="fag" id="fag" onchange="getEmner()">
+                        <select class="form-control" name="fag" id="fag" onchange="">
 
                             <option>Vælg fag</option>
                             <option value="programmering">Programmering</option>
@@ -169,7 +163,7 @@ $options = "";
                             switch($_POST['fag'])
                             {
                                 case 'programmering':
-                                    $sql = "SELECT * FROM topic WHERE class=' $option'";
+                                    $sql = "SELECT * FROM topic WHERE class='programmering'";
                                     $res = mysqli_query($conn, $sql);
                                     while ($row = mysqli_fetch_assoc($res)) {
                                         $topic_id = $row['topic_id'];
@@ -178,7 +172,7 @@ $options = "";
                                         echo "<option value='$topic_id'>$topic_name</option>";
                                     }
                                 case 'systemudvikling':
-                                    $sql = "SELECT * FROM topic WHERE class=' $option'";
+                                    $sql = "SELECT * FROM topic WHERE class='systemudvikling'";
                                     $res = mysqli_query($conn, $sql);
                                     while ($row = mysqli_fetch_assoc($res)) {
                                         $topic_id = $row['topic_id'];
@@ -187,7 +181,7 @@ $options = "";
                                         echo "<option value='$topic_id'>$topic_name</option>";
                                     }
                                 case 'webudvikling':
-                                    $sql = "SELECT * FROM topic WHERE class=' $option'";
+                                    $sql = "SELECT * FROM topic WHERE class='webudvikling'";
                                     $res = mysqli_query($conn, $sql);
                                     while ($row = mysqli_fetch_assoc($res)) {
                                         $topic_id = $row['topic_id'];
@@ -196,7 +190,7 @@ $options = "";
                                         echo "<option value='$topic_id'>$topic_name</option>";
                                     }
                                 case 'virksomhed':
-                                    $sql = "SELECT * FROM topic WHERE class=' $option'";
+                                    $sql = "SELECT * FROM topic WHERE class='virksomhed'";
                                     $res = mysqli_query($conn, $sql);
                                     while ($row = mysqli_fetch_assoc($res)) {
                                         $topic_id = $row['topic_id'];
@@ -205,7 +199,7 @@ $options = "";
                                         echo "<option value='$topic_id'>$topic_name</option>";
                                     }
                                 case 'database':
-                                    $sql = "SELECT * FROM topic WHERE class=' $option'";
+                                    $sql = "SELECT * FROM topic WHERE class='database'";
                                     $res = mysqli_query($conn, $sql);
                                     while ($row = mysqli_fetch_assoc($res)) {
                                         $topic_id = $row['topic_id'];

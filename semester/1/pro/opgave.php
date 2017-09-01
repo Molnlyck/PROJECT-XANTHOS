@@ -128,9 +128,12 @@
 	                <h3 class="my-3">Projekt Beskrivelse</h3>
 	                <p><? echo $description; ?></p>
 	                <h3 class="my-3">Projekt Detajler</h3>
-                    <ul>
-                        <li><p>Uploaded af: <? echo $upload; ?></p></li>
-                        <li><p>Uploadet den: <? echo $uploaddate; ?></p></li>
+                    <ul style="list-style:none;">
+                        <li><p><i class="fa fa-calendar"></i> &nbsp;&nbsp;&nbsp;<? echo $uploaddate; ?></p></li>
+                        <li><p><i class="fa fa-tags"></i> &nbsp;&nbsp;&nbsp;<?php echo "Tag 1, Tag 2, Tag 3"; ?></p></li>
+                        <li><p><i class="fa fa-user"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<? echo $upload; ?></p></li>
+                        <li><p><i class="fa fa-globe"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<? echo "https://skole.vibedrive.dk/home"; ?></p></li>
+
                     </ul>
 	            </div>
 	        </div>

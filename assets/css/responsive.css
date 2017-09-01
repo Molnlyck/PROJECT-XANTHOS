@@ -1,0 +1,22 @@
+@media (min-width: 1200px) {
+    .row {
+        margin-right:-15px;
+        margin-left:-15px;
+    }
+}
+@media (min-width: 0) {
+    .g-mb-30 {
+        margin-bottom: 2.14286rem !important;
+        margin-top: 2.14286rem !important;
+    }
+    .g-mb-25 {
+        margin-bottom: 1.78571rem !important;
+        margin-top: 1.78571rem !important;
+    }
+    .g-pa-20 {
+        padding:1.42857rem !important;
+    }
+    .g-mb-5 {
+        margin-bottom: 0.35714rem !important;
+    }
+}
