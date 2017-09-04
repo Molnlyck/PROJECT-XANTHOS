@@ -18,14 +18,8 @@ All you need is to sign up with a free account as long as the link is active
 - [Bootstrap Notify](http://bootstrap-notify.remabledesigns.com) - Notify 
 
 ### Versions
-*Version 1.0.0*
+[*Version 1.0.0*](https://github.com/Molnlyck/PROJECT-XANTHOS/releases/tag/1.0.0)
 - Officel release of the site. 9/5-2017
-
-*Version 1.0.1*
-- Fixed upload page. Now able to sort in classes and topics without pressing a button
-
-*Version 1.0.2*
-- Added notifications
 
 ### Authors
 - **Nicklas Vilster** - *Duden der holder styr på team aben* 
