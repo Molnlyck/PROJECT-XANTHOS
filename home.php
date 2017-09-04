@@ -25,6 +25,7 @@
   
 		
 		<!-- CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://skole.vibedrive.dk/assets/css/style.css">
 		<link rel="stylesheet" href="https://skole.vibedrive.dk/assets/css/general.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -63,10 +64,16 @@
 		
 		<div class="bgimg"></div>
 		<div class="overlaybg"></div>
-		
+
 		<?php include 'include/footer.inc.php'; ?>
-		
+
+        <!-- PLUGINS -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+
+        <!-- CUSTOM JS -->
+        <script type="text/javascript" src="assets/js/notify/bootstrap-notify.min.js"></script>
+        <script type="text/javascript" src="assets/js/notify.js"></script>
 	</body>
 </html>

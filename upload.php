@@ -118,6 +118,17 @@ $options = "";
 
         <!-- FAVICON -->
         <link rel="shortcut icon" href="http://datamatiker.vibedrive.dk/assets/img/favicon.ico">
+
+        <style>
+            [data-notify="progressbar"] {
+                margin-bottom: 0px;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                width: 100%;
+                height: 5px;
+            }
+        </style>
     </head>
     <body>
         <?php include 'include/header.inc.php'; ?>
@@ -126,7 +137,7 @@ $options = "";
 
         <div class="container">
             <div class="awesome-bg">
-                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" target="noRefresh">
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" target="noRefresh" onsubmit="return formSubmit(this)">
                     <div class="form-group ">
                         <label for="inputTitle">Opgave titel</label>
                         <input type="text" class="form-control" id="inputTitle" name="inputTitle" aria-describedby="titleHelp" placeholder="Opgave titel" value="<?php echo $inputTitle; ?>">
@@ -247,7 +258,7 @@ $options = "";
                         <label for="code">Source code</label>
                         <textarea class="form-control" id="code" name="code" rows="10"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-black" name="btn_upload">Upload</button><button type="submit" class="btn btn-black" name="btn_slet">Slet indtastede oplysninger</button>
+                    <button type="submit" class="btn btn-black" id="submitNew" name="btn_upload">Upload</button><button type="submit" class="btn btn-black" name="btn_slet">Slet indtastede oplysninger</button>
                     <?php
                     if ($_POST['btn_slet'])
                     {
@@ -267,8 +278,13 @@ $options = "";
 
         <?php include 'include/footer.inc.php'; ?>
 
-
+        <!-- PLUGINS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+
+        <!-- CUSTOM JS -->
+        <script type="text/javascript" src="https://skole.vibedrive.dk/assets/js/notify/bootstrap-notify.min.js"></script>
+        <script type="text/javascript" src="https://skole.vibedrive.dk/assets/js/notify.js"></script>
     </body>
 </html>
