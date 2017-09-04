@@ -1,4 +1,18 @@
 <? include_once '../../../include/config.php'; ?>
+<?php
+ob_start();
+session_start();
+
+if(!isset($_SESSION['user'])) {
+    header("Location: ../../../auth.php");
+    exit();
+}
+
+$sql = "SELECT * FROM user WHERE id =".$_SESSION['user'];
+$res = mysqli_query($conn, $sql);
+$userRow = mysqli_fetch_array($res, MYSQLI_ASSOC);
+
+?>
 
 <!DOCTYPE HTML>
 <html lang="da-DK">
