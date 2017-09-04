@@ -2,14 +2,14 @@
 The project is a website where datamatiker students can share their projects and assignments, and get help if there is something they can't solve by them self
 
 ## Getting started
-The website can be found on [https://datamatiker.vibedrive.dk/auth.php](https://datamatiker.vibedrive.dk/auth.php)
+The website can be found on [https://skole.vibedrive.dk/auth.php](https://skole.vibedrive.dk/auth.php)
 
 #### Software required
 - Google Chrome / Mozilla Firefox / Opera / Safari
 
-The site dosen't work in `Internet Explore` & `Microsoft Edge`
+The site doesn't work in `Internet Explore` & `Microsoft Edge`
 
-#### Installering
+#### Installing
 All you need is to sign up with a free account as long as the link is active
 
 ## Build with
@@ -19,7 +19,7 @@ All you need is to sign up with a free account as long as the link is active
 
 ### Versions
 [*Version 1.0.0*](https://github.com/Molnlyck/PROJECT-XANTHOS/releases/tag/1.0.0)
-- Officel release of the site. 9/5-2017
+- Officiel release of the site. 9/5-2017
 
 ### Authors
 - **Nicklas Vilster** - *Duden der holder styr på team aben* 
