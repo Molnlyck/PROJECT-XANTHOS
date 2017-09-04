@@ -15,6 +15,7 @@ Alt der er behov for er at oprette en profil, mens at registeringslinket fungere
 ## Bygget med
 - [Boostrap](https://bootstrap.com) - Web frameworket brugt
 - [Font Awesome](http://fontawesome.io) - Ikoner brugt
+- [Bootstrap Notify](http://bootstrap-notify.remabledesigns.com) - Notify 
 
 ### Versioner
 For flere versioner af siden se tags på dette [repository](https://github.com/molnlyck/PROJECT-XANTHOS/)
