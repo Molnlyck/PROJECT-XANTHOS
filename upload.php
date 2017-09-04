@@ -122,101 +122,141 @@ $options = "";
     <body>
         <?php include 'include/header.inc.php'; ?>
 
+        <iframe name="notRefresh" style="display:none;"></iframe>
+
         <div class="container">
             <div class="awesome-bg">
-                <form method="post" action="https://skole.vibedrive.dk/upload">
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" target="noRefresh">
                     <div class="form-group ">
                         <label for="inputTitle">Opgave titel</label>
-                        <input type="text" class="form-control" id="inputTitle" name="inputTitle" aria-describedby="titleHelp" placeholder="Opgave titel">
+                        <input type="text" class="form-control" id="inputTitle" name="inputTitle" aria-describedby="titleHelp" placeholder="Opgave titel" value="<?php echo $inputTitle; ?>">
                         <small id="titleHelp" class="form-text text-muted">Opgavens titel, som skrevet i det udleveret opgavesæt</small>
                     </div>
                     <div class="form-group">
                         <label for="opgavedesc">Beskrivelse</label>
-                        <textarea class="form-control" id="opgavedesc" name="opgavedesc" rows="3"></textarea>
+                        <textarea class="form-control" id="opgavedesc" name="opgavedesc" rows="3"><?php echo $opgaveDesc; ?></textarea>
                     </div>
                     <div class="form-group">
+
                         <label for="semester">Vælg semester</label>
-                        <select class="form-control" name="semester" id="semester" onchange="getSemester(this)">
+                        <select class="form-control" name="semester" id="semester" onchange="this.form.submit()">
                             <option>Vælg semester</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                         </select>
+
+                        <?php
+                        if ($_SESSION['SemesterUpload'] == '') {
+                            $_SESSION['SemesterUpload'] = $_POST['semester'];
+                            $_SESSION['TitleUpload'] = $_POST['inputTitle'];
+                            $_SESSION['DescUpload'] = $_POST['opgavedesc'];
+                        } else {
+
+                        }
+                        ?>
                     </div>
                     <div class="form-group">
-                        <label for="fag">Vælg fag</label>
-                        <select class="form-control" name="fag" id="fag" onchange="">
 
+                        <label for="fag">Vælg fag</label>
+                        <select class="form-control" name="fag" id="fag" onchange="this.form.submit()">
                             <option>Vælg fag</option>
-                            <option value="programmering">Programmering</option>
-                            <option value="systemudvikling">Systemudvikling</option>
-                            <option value="virksomhed">Virksomhed</option>
-                            <option value="database">Database</option>
-                            <option value="webudvikling">Webudvikling</option>
+                            <?php
+
+                            $SemesterChoosen = $_SESSION['SemesterUpload'];
+                            if($SemesterChoosen == 1) {
+                                $sql = "SELECT * FROM fag WHERE semester='$SemesterChoosen'";
+                                $res = mysqli_query($conn,$sql);
+                                while($row = mysqli_fetch_assoc($res)) {
+                                    $FagHentet = $row['fag'];
+                                    echo "<option value='$FagHentet'>$FagHentet</option>";
+                                }
+                            } else if ($SemesterChoosen == 2) {
+                                $sql = "SELECT * FROM fag WHERE semester='$SemesterChoosen'";
+                                $res = mysqli_query($conn,$sql);
+                                while($row = mysqli_fetch_assoc($res)) {
+                                    $FagHentet = $row['fag'];
+                                    echo "<option value='$FagHentet'>$FagHentet</option>";
+                                }
+                            } else if ($SemesterChoosen == 3) {
+                                $sql = "SELECT * FROM fag WHERE semester='$SemesterChoosen'";
+                                $res = mysqli_query($conn,$sql);
+                                while($row = mysqli_fetch_assoc($res)) {
+                                    $FagHentet = $row['fag'];
+                                    echo "<option value='$FagHentet'>$FagHentet</option>";
+                                }
+                            }
+                            ?>
                         </select>
+
+
+
                     </div>
                     <div class="form-group">
                         <label for="emne">Emne</label>
                         <select class="form-control" name="emne" id="emne">
                             <option>Valg emne</option>
                             <?php
-                            switch($_POST['fag'])
-                            {
-                                case 'programmering':
-                                    $sql = "SELECT * FROM topic WHERE class='programmering'";
-                                    $res = mysqli_query($conn, $sql);
-                                    while ($row = mysqli_fetch_assoc($res)) {
-                                        $topic_id = $row['topic_id'];
-                                        $topic_name = $row['topic_name'];
+                            $_SESSION['FagUpload'] = $_POST['fag'];
 
-                                        echo "<option value='$topic_id'>$topic_name</option>";
-                                    }
-                                case 'systemudvikling':
-                                    $sql = "SELECT * FROM topic WHERE class='systemudvikling'";
-                                    $res = mysqli_query($conn, $sql);
-                                    while ($row = mysqli_fetch_assoc($res)) {
-                                        $topic_id = $row['topic_id'];
-                                        $topic_name = $row['topic_name'];
-
-                                        echo "<option value='$topic_id'>$topic_name</option>";
-                                    }
-                                case 'webudvikling':
-                                    $sql = "SELECT * FROM topic WHERE class='webudvikling'";
-                                    $res = mysqli_query($conn, $sql);
-                                    while ($row = mysqli_fetch_assoc($res)) {
-                                        $topic_id = $row['topic_id'];
-                                        $topic_name = $row['topic_name'];
-
-                                        echo "<option value='$topic_id'>$topic_name</option>";
-                                    }
-                                case 'virksomhed':
-                                    $sql = "SELECT * FROM topic WHERE class='virksomhed'";
-                                    $res = mysqli_query($conn, $sql);
-                                    while ($row = mysqli_fetch_assoc($res)) {
-                                        $topic_id = $row['topic_id'];
-                                        $topic_name = $row['topic_name'];
-
-                                        echo "<option value='$topic_id'>$topic_name</option>";
-                                    }
-                                case 'database':
-                                    $sql = "SELECT * FROM topic WHERE class='database'";
-                                    $res = mysqli_query($conn, $sql);
-                                    while ($row = mysqli_fetch_assoc($res)) {
-                                        $topic_id = $row['topic_id'];
-                                        $topic_name = $row['topic_name'];
-
-                                        echo "<option value='$topic_id'>$topic_name</option>";
-                                    }
+                            if ($FagHentet == 'programmering') {
+                                $sql = "SELECT * FROM topic WHERE semester='$SemesterChoosen' AND class='$FagHentet'";
+                                $res = mysqli_query($conn,$sql);
+                                while($row = mysqli_fetch_assoc($res)) {
+                                    $topic_id = $row['topic_id'];
+                                    $topic_name = $row['topic_name'];
+                                    echo "<option value='$topic_id'>$topic_name</option>";
+                                }
+                            } else if ($FagHentet == 'systemudvikling') {
+                                $sql = "SELECT * FROM topic WHERE semester='$SemesterChoosen' AND class='$FagHentet'";
+                                $res = mysqli_query($conn,$sql);
+                                while($row = mysqli_fetch_assoc($res)) {
+                                    $topic_id = $row['topic_id'];
+                                    $topic_name = $row['topic_name'];
+                                    echo "<option value='$topic_id'>$topic_name</option>";
+                                }
+                            } else if ($FagHentet == 'database') {
+                                $sql = "SELECT * FROM topic WHERE semester='$SemesterChoosen' AND class='$FagHentet'";
+                                $res = mysqli_query($conn,$sql);
+                                while($row = mysqli_fetch_assoc($res)) {
+                                    $topic_id = $row['topic_id'];
+                                    $topic_name = $row['topic_name'];
+                                    echo "<option value='$topic_id'>$topic_name</option>";
+                                }
+                            } else if ($FagHentet == 'virksomhed') {
+                                $sql = "SELECT * FROM topic WHERE semester='$SemesterChoosen' AND class='$FagHentet'";
+                                $res = mysqli_query($conn,$sql);
+                                while($row = mysqli_fetch_assoc($res)) {
+                                    $topic_id = $row['topic_id'];
+                                    $topic_name = $row['topic_name'];
+                                    echo "<option value='$topic_id'>$topic_name</option>";
+                                }
+                            } else if ($FagHentet == 'webudvikling') {
+                                $sql = "SELECT * FROM topic WHERE semester='$SemesterChoosen' AND class='$FagHentet'";
+                                $res = mysqli_query($conn,$sql);
+                                while($row = mysqli_fetch_assoc($res)) {
+                                    $topic_id = $row['topic_id'];
+                                    $topic_name = $row['topic_name'];
+                                    echo "<option value='$topic_id'>$topic_name</option>";
+                                }
                             }
                             ?>
-
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="code">Source code</label>
                         <textarea class="form-control" id="code" name="code" rows="10"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-black" name="btn_upload">Upload</button>
+                    <button type="submit" class="btn btn-black" name="btn_upload">Upload</button><button type="submit" class="btn btn-black" name="btn_slet">Slet indtastede oplysninger</button>
+                    <?php
+                    if ($_POST['btn_slet'])
+                    {
+                        $_SESSION['SemesterUpload'] = "";
+                        $_SESSION['FagUpload'] = "";
+                        $_SESSION['TitleUpload'] = "";
+                        $_SESSION['DescUpload'] = "";
+                    }
+                    ?>
                 </form>
             </div>
         </div>

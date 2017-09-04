@@ -68,31 +68,24 @@ while ($row = mysqli_fetch_array($res_projects, MYSQLI_BOTH)) {
     </div>
 
     <div class="row text-center">
-        <div class="col-lg-3 col-sm-6 g-mb-30">
+        <div class="col-lg-4 col-sm-6 g-mb-30">
             <i class="fa fa-graduation-cap g-font-size-35 g-mb-25"></i>
             <div class="js-counter g-font-size-35">3</div>
             <h4 class="text-uppercase g-font-size-11 g-font-weight-600 g-mb-25">Semestre</h4>
 
         </div>
 
-        <div class="col-lg-3 col-sm-6 g-mb-30">
+        <div class="col-lg-4 col-sm-6 g-mb-30">
             <i class="fa fa-file-code-o g-font-size-35 g-mb-25"></i>
             <div class="js-counter g-font-size-35" data-reduce-thousands-to="k"><? echo count($projects); ?></div>
             <h4 class="text-uppercase g-font-size-11 g-font-weight-600 g-mb-25">Projekter</h4>
 
         </div>
 
-        <div class="col-lg-3 col-sm-6 g-mb-30">
+        <div class="col-lg-4 col-sm-6 g-mb-30">
             <i class="fa fa-user-o g-font-size-35 g-mb-25"></i>
             <div class="js-counter g-font-size-35"><? echo count($users); ?></div>
             <h4 class="text-uppercase g-font-size-11 g-font-weight-600 g-mb-25">Studerende</h4>
-
-        </div>
-
-        <div class="col-lg-3 col-sm-6 g-mb-30">
-            <i class="fa fa-wheelchair-alt g-font-size-35 g-mb-25"></i>
-            <div class="js-counter g-font-size-35">167</div>
-            <h4 class="text-uppercase g-font-size-11 g-font-weight-600 g-mb-25">Sjove tider</h4>
 
         </div>
     </div>
