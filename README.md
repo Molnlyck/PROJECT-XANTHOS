@@ -1,27 +1,32 @@
 # PROJECT-XANTHOS
-Projektet er en website hvor Datamatikere fra EAL kan dele deres opgaver og få hjælp med det de ikke selv kan løse.
+The project is a website where datamatiker students can share their projects and assignments, and get help if there is something they can't solve by them self
 
-## Kom i gang
-Siden kan findes på [https://datamatiker.vibedrive.dk/auth.php](https://datamatiker.vibedrive.dk/auth.php)
+## Getting started
+The website can be found on [https://skole.vibedrive.dk/auth.php](https://skole.vibedrive.dk/auth.php)
 
-#### Software der skal være installeret
+#### Software required
 - Google Chrome / Mozilla Firefox / Opera / Safari
 
-Siden virker ikke i `Internet Explore`& `Microsoft Edge`
+The site doesn't work in `Internet Explore` & `Microsoft Edge`
 
-#### Installering
-Alt der er behov for er at oprette en profil, mens at registeringslinket fungere.
+#### Installing
+All you need is to sign up with a free account as long as the link is active
 
-## Bygget med
-- [Boostrap](https://bootstrap.com) - Web frameworket brugt
-- [Font Awesome](http://fontawesome.io) - Ikoner brugt
+## Build with
+- [Boostrap](https://bootstrap.com) - Web framework used
+- [Font Awesome](http://fontawesome.io) - Icons used
+- [Bootstrap Notify](http://bootstrap-notify.remabledesigns.com) - Notify 
 
-### Versioner
-For flere versioner af siden se tags på dette [repository](https://github.com/molnlyck/PROJECT-XANTHOS/)
+### Versions
+[*Version 1.0.0*](https://github.com/Molnlyck/PROJECT-XANTHOS/releases/tag/1.0.0)
+- Officiel release of the site. 9/5-2017
 
 ### Authors
 - **Nicklas Vilster** - *Duden der holder styr på team aben* 
 - **Patrick Bergmann** - *Offical Team Abe*
 
 ### Licens
-Dette projekt er licensed under MIT Licens - se [LICENSE.md] filen for flere detajler
+This project is licensed under MIT Licens - see the [LICENSE.md] file for more details
+
+### Copyright
+This project is copyrighted `2017` by: Nicklas Vilster and Patrick Bergmann
