@@ -47,6 +47,7 @@ while ($row = mysqli_fetch_array($res_projects, MYSQLI_BOTH)) {
     <link rel="stylesheet" href="assets/css/dokumentation.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://skole.vibedrive.dk/assets/css/style.css">
     <link rel="stylesheet" href="https://skole.vibedrive.dk/assets/css/general.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">

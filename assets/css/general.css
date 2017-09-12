@@ -16,12 +16,12 @@ pre {
   
 }
 .dropdown-menu a {
-  font-size:16px;
+  font-size:14px;
   padding:10px !important;
   color:#00B285 !important;
 }
 .dropdown-menu a i {
-  font-size:20px;
+  font-size:16px;
   width:25px;
   height:20px;
   color:#00B285 !important;
@@ -44,7 +44,6 @@ pre {
     -moz-border-radius: 0 6px 6px;
     border-radius: 0 6px 6px 6px;
 }
-
 .dropdown-submenu:hover>.dropdown-menu {
     display: block;
 }
